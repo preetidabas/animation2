@@ -1,0 +1,68 @@
+body {
+    margin: 0;
+}
+
+.div1 {
+    background-color: aquamarine;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: absolute;
+
+    animation-name: move_div;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes move_div {
+    0% {
+        left: 0;
+        top: 0;
+    }
+
+    25% {
+        left: 400px;
+        top: 0;
+        background-color: aqua;
+    }
+
+    50% {
+        left: 400px;
+        top: 400px;
+        background-color: red;
+
+    }
+    75%{
+        right: 400px;
+        top: 400px;
+        background-color:yellow;
+    }
+    25%{
+        right: 400px;
+        top: 400px;
+        background-color:grey;
+    }
+
+
+}
+
+.nav {
+    background-color: pink;
+    font-size: 30px;
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 20px;
+
+}
+
+a:hover {
+    background-color: yellow;
+    color: red;
+}
